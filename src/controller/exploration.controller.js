@@ -4,7 +4,11 @@ const Exploration = require('../model/exploration.model');
 
 const getAllExplorations = async (req, res) => {
     try {
-        const explorations = await Exploration.find();
+        const locationId = req.query;
+
+        const explorations = await Exploration.find({
+            locationId : { $regex: locationId || '', $options: 'i' }
+        });
 
         res.status(200).json({success: true, data: explorations});
     } catch (err) {
@@ -32,11 +36,7 @@ const getById = async (req, res) => {
 
 const postExploration = async (req, res) => {
     try {
-        const exploration = new Exploration({
-            name: req.body.name,
-            slug: slugify(req.body.name, {lower: true}),
-            description: req.body.description
-        });
+        const exploration = new Exploration(req.body);
 
         await exploration.save();
 

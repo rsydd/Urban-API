@@ -10,8 +10,6 @@ const getAllLocations = async (req, res) => {
         const locations = await Location.find({
             name: { $regex: name || '', $options: 'i'},
             status: { $regex: status || '', $options: 'i'},
-            category: { $regex: category || '', $options: 'i'},
-            country: { $regex: country || '', $options: 'i'},
             city: { $regex: city || '', $options: 'i'}
         });
 
@@ -28,7 +26,7 @@ const getById = async (req, res) => {
         const location = await Location.findById(req.params.id);
 
         if(!location) {
-            res.status(404).json({message: 'Location not found'});
+            return res.status(404).json({message: 'Location not found'});
         }
 
         res.json(location);
@@ -96,7 +94,7 @@ const putLocation = async (req, res) => {
 
 const patchLocation = async (req, res) => {
     try{
-        const location = await location.findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true, runValidators: true});
+        const location = await Location.findByIdAndUpdate(req.params.id, {$set: req.body}, {new: true, runValidators: true});
 
         if(!location) {
             return res.status(404).json({message: 'Location not found.'});

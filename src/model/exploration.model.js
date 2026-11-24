@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const explorationSchema = new mongoose.Schema({
-    name: {
+    explorerId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Explorer',
         required: true

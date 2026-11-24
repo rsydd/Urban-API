@@ -87,7 +87,7 @@ const patchExplorer = async (req, res) => {
             return res.status(404).json({message: 'Explorer not found.'});
         }
 
-        res.json({message: 'Explorer updated successfuly', data: Explorer});
+        res.json({message: 'Explorer updated successfuly', data: explorer});
     } catch (err) {
         res.status(400).json({message: err.message});
     }
