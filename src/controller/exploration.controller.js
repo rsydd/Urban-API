@@ -4,12 +4,16 @@ const Exploration = require('../model/exploration.model');
 
 const getAllExplorations = async (req, res) => {
     try {
-        const locationId = req.query;
+        const {locationId} = req.query;
 
-        const explorations = await Exploration.find({
-            locationId : { $regex: locationId || '', $options: 'i' }
-        });
+        const filter = {};
 
+        if(locationId) {
+            filter.locationId = locationId;
+        }
+
+        const explorations = await Exploration.find(filter).populate('locationId');
+        
         res.status(200).json({success: true, data: explorations});
     } catch (err) {
         return res.status(500).json({success: false, message: err.message});
