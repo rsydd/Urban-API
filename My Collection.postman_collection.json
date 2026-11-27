@@ -1,0 +1,959 @@
+{
+  "info": {
+    "_postman_id": "adbc219b-996b-4204-8d5b-fb365b2b532b",
+    "name": "My Collection",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "60130701",
+    "_collection_link": "https://go.postman.co/collection/60130701-adbc219b-996b-4204-8d5b-fb365b2b532b?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Category",
+      "item": [
+        {
+          "name": "Get All Category",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categories/6affeccd6630afe2035f6ab3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories",
+                "6affeccd6630afe2035f6ab3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Category by Slug",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categories/slug/railway-station",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories",
+                "slug",
+                "railway-station"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Category",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Monumental Building\",\r\n    \"description\": \"A building to preserve memory & project authority.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Category (All)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Institutions\",\r\n    \"description\": \"Abandoned college or educational institutions.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories/6affef140626e85d26767ab3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories",
+                "6affef140626e85d26767ab3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Category (Partial)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"College\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories/6affef140626e85d26767ab3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories",
+                "6affef140626e85d26767ab3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Category",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/categories/6b05eba308b33ccd2de19b27",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories",
+                "6b05eba308b33ccd2de19b27"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Countries",
+      "item": [
+        {
+          "name": "Get All Countries",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/countries",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Country by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/countries/6b000412cd26f88fdcab6124",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries",
+                "6b000412cd26f88fdcab6124"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Country",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Malaysia\",\r\n    \"code\": \"MY\",\r\n    \"continent\": \"Asia\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/countries",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Country (All)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Institutions\",\r\n    \"description\": \"Abandoned college or educational institutions.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/countries/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Country (Partial)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"College\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/countries/",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries",
+                ""
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Country",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/countries",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "countries"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Explorations",
+      "item": [
+        {
+          "name": "Get All Explorations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Exploration by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorations/6b05f710dcfdb8d2bee8c97b",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations",
+                "6b05f710dcfdb8d2bee8c97b"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Location On Exploration",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorations?locationId=6b05f299dcfdb8d2bee8c979",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations"
+              ],
+              "query": [
+                {
+                  "key": "locationId",
+                  "value": "6b05f299dcfdb8d2bee8c979"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Exploration",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"explorerId\": \"\",\r\n    \"locationId\": \"\",\r\n    \"visitedAt\": \"2026-10-12T09:00:00.000Z\",\r\n    \"notes\": \"Documented the exterior architecture and historical features.\",\r\n    \"rating\": 8\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Exploration (All)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Institutions\",\r\n    \"description\": \"Abandoned college or educational institutions.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Exploration (Partial)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"College\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Exploration",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorations/6b0975468ae6ceb50e300545",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorations",
+                "6b0975468ae6ceb50e300545"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Explorers",
+      "item": [
+        {
+          "name": "Get All Explorers",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Explorer by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorers/6b05f5dedcfdb8d2bee8c97a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers",
+                "6b05f5dedcfdb8d2bee8c97a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Explorer's Explorations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorers/6b05f5dedcfdb8d2bee8c97a/explorations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers",
+                "6b05f5dedcfdb8d2bee8c97a",
+                "explorations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Explorer",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Fuad\",\r\n    \"username\": \"masfuad69\",\r\n    \"email\": \"fuadganteng@gmail.com\",\r\n    \"bio\": \"Interested in history of eastern ngawi and its arhcitecture.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorers",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Explorer (All)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Rusdi\",\r\n    \"username\": \"rusdibarbershop\",\r\n    \"email\": \"rusdibarber@gmail.com\",\r\n    \"bio\": \"Interested in history of ngawi and its arhcitecture.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorers/6b05f5dedcfdb8d2bee8c97a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers",
+                "6b05f5dedcfdb8d2bee8c97a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Explorer (Partial)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"rusdibarber@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/explorers/6b05f5dedcfdb8d2bee8c97a",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers",
+                "6b05f5dedcfdb8d2bee8c97a"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Explorer Copy",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/explorers/6b0974438ae6ceb50e300542",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "explorers",
+                "6b0974438ae6ceb50e300542"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Location",
+      "item": [
+        {
+          "name": "Get All Locations",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Location by Id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations/6b0005a5cd26f88fdcab6125",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations",
+                "6b0005a5cd26f88fdcab6125"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Location by Slug",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations/slug/jetis-train-station",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations",
+                "slug",
+                "jetis-train-station"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Location by Name",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations?name=benteng",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations"
+              ],
+              "query": [
+                {
+                  "key": "name",
+                  "value": "benteng"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Location by Status",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations?status=abandoned",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "abandoned"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Search Location by City",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations?city=ngawi",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations"
+              ],
+              "query": [
+                {
+                  "key": "city",
+                  "value": "ngawi"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Location",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Tugu Van Den Mok\",\r\n    \"description\": \"Sebuah monumen peringatan untuk mengenang perlawanan agresi militer belanda terhadap kerajaan ngawi timur.\",\r\n    \"categoryId\": \"6b0974c78ae6ceb50e300543\",\r\n    \"countryId\": \"6b000412cd26f88fdcab6124\",\r\n    \"city\": \"Ngawi\",\r\n    \"status\": \"abandoned\",\r\n    \"condition\": \"deteriorating\",\r\n    \"yearAbandoned\": 1965\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/locations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Location (All)",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Benteng Kerajaan Rongawi\",\r\n    \"description\": \"Sebuah bangunan pertahanan militer yang dibangun oleh kerajaan rongawi, dibangun oleh raja Amba XI.\",\r\n    \"categoryId\": \"6affeccd6630afe2035f6ab3\",\r\n    \"countryId\": \"6b000412cd26f88fdcab6124\",\r\n    \"city\": \"Ngawi\",\r\n    \"status\": \"abandoned\",\r\n    \"condition\": \"deteriorating\",\r\n    \"yearAbandoned\": 1950\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/locations/6b05f299dcfdb8d2bee8c979",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations",
+                "6b05f299dcfdb8d2bee8c979"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Location (Partial)",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"description\": \"Sebuah bangunan pertahanan militer yang dibangun oleh kerajaan rongawi, dibangun oleh raja Amba IV.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/locations/6b05f299dcfdb8d2bee8c979",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations",
+                "6b05f299dcfdb8d2bee8c979"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Delete Location",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:3000/api/locations/6b0975138ae6ceb50e300544",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "locations",
+                "6b0975138ae6ceb50e300544"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
